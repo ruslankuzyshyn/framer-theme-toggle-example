@@ -103,7 +103,6 @@ const setPageThemeStylingIfThemeAvailable = () => {
     // Detect system theme
     const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
     themeToSet = mediaQuery.matches ? THEME.DARK : THEME.LIGHT;
-    localStorage.setItem(THEME_STORE_KEY, themeToSet);
   } else {
     localStorage.setItem(THEME_STORE_KEY, themeToSet);
   }
